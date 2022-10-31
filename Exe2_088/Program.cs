@@ -35,5 +35,8 @@ namespace Exe2_088
                     Console.WriteLine("\n Array should have minimum 1 and maximum 1620 element.\n");
             }
         }
+
+        public void AlgorithmLowHigh() {
+        }
     }
 }
