@@ -70,7 +70,7 @@ namespace Exe2_088
                         case 2:
                             Console.WriteLine("");
                             Console.WriteLine("...............");
-                            Console.WriteLine("SearchGPA");
+                            Console.WriteLine("AlgorithmLowHigh");
                             Console.WriteLine("...............");
                             myList.input();
                             myList.AlgorithmLowHigh();
@@ -85,7 +85,7 @@ namespace Exe2_088
                     //to exit from the console
                     Console.WriteLine("\n\nPress return to exit.");
                     Console.ReadLine();
-                } while (pilihanmenu != 3);
+                } while (Menu != 3);
             }
         }
     }
