@@ -27,7 +27,6 @@ namespace Exe2_088
             {
                 Console.WriteLine("Enter Subject");
                 string s = Console.ReadLine();
-                int = Int32.Parse(s);
                 int n = 0;
                 if ((n > 0) && (n <= 1620))
                     break;
@@ -37,6 +36,52 @@ namespace Exe2_088
         }
 
         public void AlgorithmLowHigh() {
+
+
+            static void Main(string[] args)
+            {
+                Program myList = new Program();
+                int pilihanmenu;
+                do
+                {
+                    Console.WriteLine("Menu Option");
+                    Console.WriteLine("===========");
+                    Console.WriteLine("1.Linear Search");
+                    Console.WriteLine("2. BinarySearch");
+                    Console.WriteLine("3. Exit");
+                    Console.WriteLine("Enter your choice (1,2,3) :");
+                    pilihanmenu = Convert.ToInt32(Console.ReadLine());
+
+                    switch (pilihanmenu)
+                    {
+                        case 1:
+                            Console.WriteLine("");
+                            Console.WriteLine("...............");
+                            Console.WriteLine("SearchGPA");
+                            Console.WriteLine("...............");
+                            myList.input();
+                            myList.SearchGPA();
+                            break;
+                        case 2:
+                            Console.WriteLine("");
+                            Console.WriteLine("...............");
+                            Console.WriteLine("SearchGPA");
+                            Console.WriteLine("...............");
+                            myList.input();
+                            myList.AlgorithmLowHigh();
+                            break;
+                        case 3:
+                            Console.WriteLine("Exit");
+                            break;
+                        default:
+                            Console.WriteLine("Error");
+                            break;
+                    }
+                    //to exit from the console
+                    Console.WriteLine("\n\nPress return to exit.");
+                    Console.ReadLine();
+                } while (pilihanmenu != 3);
+            }
         }
     }
 }
