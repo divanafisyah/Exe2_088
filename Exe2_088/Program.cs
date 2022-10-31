@@ -34,15 +34,26 @@ namespace Exe2_088
                     Console.WriteLine("\n Array should have minimum 1 and maximum 1620 element.\n");
             }
         }
-
         public void AlgorithmLowHigh(int low, int high) 
         {
             int pivot, i, j;
             if (low > high)
                 return;
+            i = low + 1;
+            j = high + 1;
 
+            pivot = dn[low];
 
-            static void Main(string[] args)
+            while (i <= j)
+            {
+                while ((dn[i] <= pivot) && (i <= high))
+                {
+                    i++;
+                    cmp_count++;
+                }
+                cmp_count++;
+
+                static void Main(string[] args)
             {
                 Program myList = new Program();
                 int pilihanmenu;
