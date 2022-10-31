@@ -35,7 +35,11 @@ namespace Exe2_088
             }
         }
 
-        public void AlgorithmLowHigh() {
+        public void AlgorithmLowHigh(int low, int high) 
+        {
+            int pivot, i, j;
+            if (low > high)
+                return;
 
 
             static void Main(string[] args)
