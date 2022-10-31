@@ -42,32 +42,22 @@ namespace Exe2_088
             i = low + 1;
             j = high + 1;
 
-            pivot = dn[low];
-
             while (i <= j)
             {
-                while ((dn[i] <= pivot) && (i <= high))
-                {
-                    i++;
-                    cmp_count++;
-                }
-                cmp_count++;
-
                 static void Main(string[] args)
             {
                 Program myList = new Program();
-                int pilihanmenu;
+                int Menu;
                 do
                 {
                     Console.WriteLine("Menu Option");
                     Console.WriteLine("===========");
-                    Console.WriteLine("1.Linear Search");
-                    Console.WriteLine("2. BinarySearch");
+                    Console.WriteLine("1.SearchGPA");
+                    Console.WriteLine("2.AlgorithmLowHigh");
                     Console.WriteLine("3. Exit");
-                    Console.WriteLine("Enter your choice (1,2,3) :");
-                    pilihanmenu = Convert.ToInt32(Console.ReadLine());
+                    Menu = Convert.ToInt32(Console.ReadLine());
 
-                    switch (pilihanmenu)
+                    switch (Menu)
                     {
                         case 1:
                             Console.WriteLine("");
